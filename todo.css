@@ -1,0 +1,103 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Input and button wrapper */
+input {
+    padding: 10px 15px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #4caf50;
+}
+
+/* Add task button */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task list */
+ul {
+    list-style-type: none;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Each task item */
+li {
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Delete button inside list */
+li .delete {
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+li .delete:hover {
+    background-color: #c0392b;
+}
+
+/* Optional: completed task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
